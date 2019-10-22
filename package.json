@@ -1,0 +1,72 @@
+{
+  "_from": "git+https://github.com/voxeet/voxeet-cordova-conferencekit.git",
+  "_id": "cordova-plugin-voxeet@1.0.31",
+  "_inBundle": false,
+  "_location": "/cordova-plugin-voxeet",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/voxeet/voxeet-cordova-conferencekit",
+    "rawSpec": "https://github.com/voxeet/voxeet-cordova-conferencekit",
+    "saveSpec": "git+https://github.com/voxeet/voxeet-cordova-conferencekit.git",
+    "fetchSpec": "https://github.com/voxeet/voxeet-cordova-conferencekit.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/voxeet/voxeet-cordova-conferencekit.git#0ccf57a863cafef478e718223d197868090e5afc",
+  "_spec": "https://github.com/voxeet/voxeet-cordova-conferencekit",
+  "_where": "/Users/kevinleperf/voxeet_hello",
+  "author": {
+    "name": "Voxeet"
+  },
+  "bugs": {
+    "url": "https://github.com/voxeet/voxeet-cordova-conferencekit/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-voxeet",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Voxeet Plugin",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jshint": "^2.6.0"
+  },
+  "engines": {
+    "cordova": ">=7.0.0"
+  },
+  "homepage": "https://github.com/voxeet/voxeet-cordova-conferencekit#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "voxeet",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-voxeet",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voxeet/voxeet-cordova-conferencekit.git"
+  },
+  "scripts": {
+    "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests",
+    "postinstall": "bash build_ios_frameworks_only.sh",
+    "test": "npm run eslint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "1.0.31"
+}

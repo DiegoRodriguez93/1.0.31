@@ -1,0 +1,33 @@
+android {
+    defaultConfig {
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    dexOptions {
+        jumboMode true
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile 'com.android.support:multidex:1.0.3'
+    compile ('com.voxeet.sdk:toolkit:1.4.11') {
+        transitive = true
+    }
+}
+
+//Voxeet does need the 28 version
+//in case of incompatibility, please open up an issue
+//or consider upgrading if possible
+ext.cdvCompileSdkVersion = 28
+ext.cdvBuildToolsVersion = "28.0.3"
+
+// check for the environment variable to apply the push notification
+// to enable push notification in builds : export USE_PUSH_NOTIFICATION=true
+def push = System.getenv("USE_PUSH_NOTIFICATION")
+if ("true".equals(push)) {
+  cdvPluginPostBuildExtras.add({
+    apply plugin: 'com.google.gms.google-services'
+  })
+}
