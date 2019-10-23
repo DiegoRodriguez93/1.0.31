@@ -64,7 +64,6 @@
   },
   "scripts": {
     "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests",
-    "postinstall": "bash build_ios_frameworks_only.sh",
     "test": "npm run eslint"
   },
   "types": "./types/index.d.ts",
